@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="ear" name="suprails-ear">
+    <output-path>$PROJECT_DIR$/out/artifacts/suprails_ear</output-path>
+    <root id="archive" name="suprails-ear.ear">
+      <element id="artifact" artifact-name="suprails-war" />
+      <element id="artifact" artifact-name="suprails-ejb" />
+    </root>
+  </artifact>
+</component>

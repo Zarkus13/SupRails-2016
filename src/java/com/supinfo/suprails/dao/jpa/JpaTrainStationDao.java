@@ -14,7 +14,7 @@ import javax.persistence.PersistenceContext;
 @Stateless
 public class JpaTrainStationDao implements TrainStationDao {
 
-    @PersistenceContext
+    @PersistenceContext(name = "SupRails-PU")
     private EntityManager em;
     
     

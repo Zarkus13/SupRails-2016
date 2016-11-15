@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="suprails-ejb">
+    <output-path>$PROJECT_DIR$/out/artifacts/suprails_ejb</output-path>
+    <root id="archive" name="suprails-ejb.jar">
+      <element id="jpa-descriptors" facet="SupRails/jpa/JPA" />
+    </root>
+  </artifact>
+</component>

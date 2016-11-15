@@ -15,7 +15,7 @@ import javax.persistence.criteria.CriteriaQuery;
 @Stateless
 public class JpaTripDao implements TripDao {
 
-    @PersistenceContext
+    @PersistenceContext(name = "SupRails-PU")
     private EntityManager em;
 
     
