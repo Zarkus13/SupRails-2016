@@ -44,9 +44,14 @@
                                 <c:param name="id" value="${trip.id}" />
                             </c:url>
 
+                            <c:url value="/order" var="processOrderUrl">
+                                <c:param name="tripId" value="${trip.id}" />
+                            </c:url>
+
                             <td><c:out value="${trip.departureStation.name}" /></td>
                             <td><c:out value="${trip.arrivalStation.name}" /></td>
                             <td><c:out value="€${trip.price}" /></td>
+                            <td><a href="${processOrderUrl}">Buy it !</a></td>
                             <c:if test="${not empty user}">
                                 <td>
                                     <a href="${deleteTripUrl}">Delete</a>
