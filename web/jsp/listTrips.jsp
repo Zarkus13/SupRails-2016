@@ -37,8 +37,8 @@
                             <th>Action</th>
                         </c:if>
                     </tr>
-                    <tr>
-                        <c:forEach items="${trips}" var="trip">
+                    <c:forEach items="${trips}" var="trip">
+                        <tr>
 
                             <c:url value="/admin/trips/delete" var="deleteTripUrl">
                                 <c:param name="id" value="${trip.id}" />
@@ -57,9 +57,8 @@
                                     <a href="${deleteTripUrl}">Delete</a>
                                 </td>
                             </c:if>
-
-                        </c:forEach>
-                    </tr>
+                        </tr>
+                    </c:forEach>
                 </table>
             </c:when>
             <c:otherwise>
